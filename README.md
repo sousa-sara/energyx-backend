@@ -103,3 +103,22 @@ http://localhost:8081/swagger-ui/index.html#/
 Link do Pitch:
 
 Link Aplicação Java Spring Boot:
+
+## Sobre o Projeto Global Solutions
+A cada semestre, desenvolvemos um projeto que integra todas as disciplinas do curso de Análise e Desenvolvimento de Sistemas, com o objetivo de propor soluções para um tema de relevância global, promovido pela nossa instituição.
+
+**Global Solutions - Tema:** Energia Renovável
+
+Este projeto aborda soluções inovadoras e sustentáveis para questões relacionadas à energia renovável, buscando promover um impacto positivo na sociedade e no meio ambiente.
+
+**Instituição:** FIAP - Faculdade de Informática e Administração Paulista
+
+**Turma:** 2TDSPS
+
+## Desenvolvedores
+
+[Felipe Amador](https://github.com/felipetosma) | RM 553528
+
+[Leonardo Oliveira](https://github.com/leooli-321) | RM 554024
+
+[Sara Sousa](https://github.com/sousa-sara) | RM 552656
