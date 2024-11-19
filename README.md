@@ -72,30 +72,30 @@ Agora, é preciso criar a imagem Docker a partir do Dockerfile fornecido no proj
 No diretório raiz do projeto, onde o Dockerfile está localizado, execute o seguinte comando:
 
 ```bash
-docker build -t energyx-backend .
+docker build -t energyx-backend-image .
 ```
 
-Esse comando irá construir a imagem Docker e nomeá-la como energyx-backend.
+Esse comando irá construir a imagem Docker e nomeá-la como energyx-backend-image.
 
 ### 4. Rodar a Aplicação no Docker
 Após a construção da imagem Docker, você pode rodar a aplicação dentro de um container Docker. Para isso, execute o seguinte comando:
 
 ```bash
-docker run -p 8081:8081 energyx-backend
+docker run -p 8080:8080 --name energyx-backend energyx-backend-image
 ```
 
-O comando acima vai mapear a porta 8081 do container para a porta 8081 da sua máquina local, permitindo o acesso à aplicação.
+O comando acima vai mapear a porta 8080 do container para a porta 8080 da sua máquina local, permitindo o acesso à aplicação.
 
 ### 5. Acessar a Aplicação
 A aplicação agora está rodando dentro do container. Abra o navegador e acesse a seguinte URL:
 
 ```bash
-http://localhost:8081
+http://localhost:8080
 ```
 
 - Com Swagger:
 ```bash
-http://localhost:8081/swagger-ui/index.html#/
+http://localhost:8080/swagger-ui/index.html#/
 ```
 
 ## Apresentação em Vídeo do Projeto
