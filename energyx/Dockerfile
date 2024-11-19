@@ -8,7 +8,7 @@ WORKDIR /app
 COPY target/energyx-0.0.1-SNAPSHOT.jar app.jar
 
 # Expor a porta em que a aplicação irá rodar
-EXPOSE 8081
+EXPOSE 8080
 
 # Comando para iniciar a aplicação
 ENTRYPOINT ["java", "-jar", "app.jar"]

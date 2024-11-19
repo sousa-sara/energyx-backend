@@ -7,8 +7,6 @@ import lombok.Getter;
 import lombok.NoArgsConstructor;
 import lombok.Setter;
 
-import java.util.Date;
-
 @Entity
 @Table(name = "gs_el_turnos")
 @Getter
@@ -22,13 +20,9 @@ public class Turnos {
     @Column(name = "turno_id")
     private Long turnoId;
 
-    @NotNull(message = "A data de início é obrigatória.")
-    @Column(name = "data_inicio", nullable = false)
-    @Temporal(TemporalType.DATE)
-    private Date dataInicio;
+    @NotNull(message = "A descrição é obrigatória.")
+    @Column(name = "descricao_turno", nullable = false, length = 50)
+    private String descricaoTurno;
 
-    @Column(name = "data_fim")
-    @Temporal(TemporalType.DATE)
-    private Date dataFim;
 }
 

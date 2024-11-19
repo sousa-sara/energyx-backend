@@ -58,23 +58,20 @@ public class TurnosServiceImpl implements TurnosService {
     private TurnosDTO mapearEntidadeParaDTO(Turnos turno) {
         return new TurnosDTO(
                 turno.getTurnoId(),
-                turno.getDataInicio(),
-                turno.getDataFim()
+                turno.getDescricaoTurno()
         );
     }
 
     // Método privado para mapear DTO para entidade
     private Turnos mapearDTOParaEntidade(TurnosDTO turnosDTO) {
         Turnos turno = new Turnos();
-        turno.setDataInicio(turnosDTO.getDataInicio());
-        turno.setDataFim(turnosDTO.getDataFim());
+        turno.setDescricaoTurno(turnosDTO.getDescricaoTurno());
         return turno;
     }
 
     // Método privado para mapear DTO para entidade (atualizando um turno existente)
     private Turnos mapearDTOParaEntidade(TurnosDTO turnosDTO, Turnos turno) {
-        turno.setDataInicio(turnosDTO.getDataInicio());
-        turno.setDataFim(turnosDTO.getDataFim());
+        turno.setDescricaoTurno(turnosDTO.getDescricaoTurno());
         return turno;
     }
 }
