@@ -14,4 +14,6 @@ public interface OperadoresService {
     OperadoresDTO atualizarOperador(Long id, OperadoresDTO operadoresDTO);
     boolean excluirOperador(Long id);
 
+    // Novo método para validar credenciais do login
+    boolean validarCredenciais(String lor, String senhaOperador);
 }

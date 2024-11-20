@@ -1,15 +1,13 @@
 package com.example.energyx.controller;
-
 import com.example.energyx.dto.OperadoresDTO;
+import com.example.energyx.dto.OperadoresLoginDTO;
 import com.example.energyx.service.implementations.OperadoresServiceImpl;
-import com.example.energyx.service.interfaces.OperadoresService;
 import jakarta.validation.Valid;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.data.domain.Page;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
-
 import static org.springframework.hateoas.server.mvc.WebMvcLinkBuilder.linkTo;
 import static org.springframework.hateoas.server.mvc.WebMvcLinkBuilder.methodOn;
 
@@ -26,6 +24,17 @@ public class OperadoresController {
         OperadoresDTO operadorCadastrado = operadoresService.cadastrarOperador(operadoresDTO);
         adicionarLinks(operadorCadastrado);
         return new ResponseEntity<>(operadorCadastrado, HttpStatus.CREATED);
+    }
+
+    // Endpoint de login simples
+    @PostMapping("/login")
+    public ResponseEntity<String> login(@RequestBody OperadoresLoginDTO operadoresDTO) {
+        // Valida se o login e senha conferem
+        boolean valido = operadoresService.validarCredenciais(operadoresDTO.getLor(), operadoresDTO.getSenhaOperador());
+        if (valido) {
+            return ResponseEntity.ok("Login bem-sucedido");
+        }
+        return ResponseEntity.status(HttpStatus.UNAUTHORIZED).body("Credenciais inválidas");
     }
 
     // Endpoint para listar todos os operadores com paginação
