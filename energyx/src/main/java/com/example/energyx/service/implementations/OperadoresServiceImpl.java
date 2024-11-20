@@ -27,7 +27,6 @@ public class OperadoresServiceImpl implements OperadoresService {
 
     @Override
     public OperadoresDTO cadastrarOperador(OperadoresDTO operadoresDTO) {
-        operadoresDTO.setSenhaOperador(operadoresDTO.getSenhaOperador());
         Operadores operador = mapearDTOParaEntidade(operadoresDTO);
         operador = operadoresRepository.save(operador);
         return mapearEntidadeParaDTO(operador);

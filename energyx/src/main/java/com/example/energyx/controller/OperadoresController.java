@@ -1,6 +1,7 @@
 package com.example.energyx.controller;
 
 import com.example.energyx.dto.OperadoresDTO;
+import com.example.energyx.service.implementations.OperadoresServiceImpl;
 import com.example.energyx.service.interfaces.OperadoresService;
 import jakarta.validation.Valid;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -17,7 +18,7 @@ import static org.springframework.hateoas.server.mvc.WebMvcLinkBuilder.methodOn;
 public class OperadoresController {
 
     @Autowired
-    private OperadoresService operadoresService;
+    private OperadoresServiceImpl operadoresService;
 
     // Endpoint para cadastrar um novo operador
     @PostMapping("/cadastro")
