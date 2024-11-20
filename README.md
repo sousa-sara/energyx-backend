@@ -25,8 +25,8 @@ Além disso, o sistema conta com um módulo de **verificação do uso de EPIs (E
 ## Tecnologias Utilizadas
 
 - **Backend**: Java, Spring Boot, Oracle Database, Docker
-- **Frontend/Mobile**: Kotlin, Figma,
-- **Deep Learning & Visão Computacional**: Python, TensorFlow/Keras, OpenCV
+- **Frontend/Mobile**: Kotlin, Figma
+- **Deep Learning & Visão Computacional**: Python, Roboflow
 - **Relatório Diário**: .NET Core, Entity Framework, Oracle Database
 
 ## Modelagem do Banco de Dados
