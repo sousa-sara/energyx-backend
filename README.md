@@ -17,7 +17,7 @@ Além disso, o sistema conta com um módulo de **verificação do uso de EPIs (E
 - **Aplicação .NET (Relatório Diário)**:
     - Login e Cadastro do Operador
     - Tela de Relatório Diário de Trabalho
-    - Integração com Banco de Dados Oracle para armazenar os dados do relatório
+    - Integração com Banco de Dados Oracle para armazenar os dados do relatório e operadores
 
 - **Deep Learning & Visão Computacional**:
     - Reconhecimento de EPIs, como máscara, óculos, e macacão, garantindo que os operadores estejam utilizando o equipamento adequado.
