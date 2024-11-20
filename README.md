@@ -89,10 +89,6 @@ O comando acima vai mapear a porta 8080 do container para a porta 8080 da sua m�
 ### 5. Acessar a Aplicação
 A aplicação agora está rodando dentro do container. Abra o navegador e acesse a seguinte URL:
 
-```bash
-http://localhost:8080
-```
-
 - Com Swagger:
 ```bash
 http://localhost:8080/swagger-ui/index.html#/
@@ -100,9 +96,9 @@ http://localhost:8080/swagger-ui/index.html#/
 
 ## Apresentação em Vídeo do Projeto
 
-Link do Pitch:
+[Vídeo Pitch]()
 
-Link Aplicação Java Spring Boot:
+[Vídeo Aplicação Backend & Integração com Frontend](https://www.youtube.com/watch?v=JWLqkCQ3YvE)
 
 ## Sobre o Projeto Global Solutions
 A cada semestre, desenvolvemos um projeto que integra todas as disciplinas do curso de Análise e Desenvolvimento de Sistemas, com o objetivo de propor soluções para um tema de relevância global, promovido pela nossa instituição.
