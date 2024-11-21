@@ -96,7 +96,7 @@ http://localhost:8080/swagger-ui/index.html#/
 
 ## Apresentação em Vídeo do Projeto
 
-[Vídeo Pitch]()
+[Vídeo Pitch](https://youtu.be/4Arsd4bjMcM)
 
 [Vídeo Aplicação Backend & Integração com Frontend](https://www.youtube.com/watch?v=JWLqkCQ3YvE)
 
