@@ -27,7 +27,7 @@ Além disso, o sistema conta com um módulo de **verificação do uso de EPIs (E
 - **Backend**: Java, Spring Boot, Oracle Database, Docker
 - **Frontend/Mobile**: Kotlin, Figma
 - **Deep Learning & Visão Computacional**: Python, Roboflow
-- **Relatório Diário**: .NET Core, Entity Framework, Oracle Database
+- **Relatório Diário**: .NET Core, Entity Framework, Oracle Database, Bootstrap
 
 ## Modelagem do Banco de Dados
 ![Modelagem](images-readme/modelagem-bd.jpeg)
